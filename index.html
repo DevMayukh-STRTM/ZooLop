@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="https://gravitydb.github.io/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://gravitydb.github.io/CSS/font.css">
+    <link rel="stylesheet" type="text/css" href="https://gravitydb.github.io/CSS/gray_shades.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Kendstar</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+        .titles {
+            font-family: 'Oxygen', serif;
+        }
+        
+        .bg-gray-custom {
+            background-color: rgb(165, 165, 165);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="sidepane" class="lg:hidden hidden w-screen h-screen fixed" style="background-color: rgba(15, 15, 15, 0.6);">
+        <div class="w-4/5 bg-gray-700 h-full flex flex-col justify-between border-box p-8" style="font-family: Quicksand-regular;">
+            <div class="contaner">
+                <div class="flex flex-row mb-8 justify-between">
+                    <h1 class="text-white text-4xl">Menu</h1>
+                    <img id="close" src="./close_white_24dp.svg" alt="">
+                </div>
+                <hr>
+                <div id="items" class="my-8 flex flex-col text-2xl text-gray-300">
+                    <a id="h_cl" href="" class="my-2">HOME</a>
+                    <a id="a_cl" href="#about_us" class="my-2">ABOUT US</a>
+                    <a id="p_cl" href="#product_list" class="my-2">PRODUCTS</a>
+                    <a id="c_cl" href="#contact" class="my-2">CONTACT US</a>
+                </div>
+                <hr>
+                <h1 class="text-white mt-8 text-xl">© 2021 KendStar</h1>
+            </div>
+            
+        </div>
+    </div>
+    <section class="h-screen bg-gray-custom" style="background-blend-mode: multiply;background-size: cover;background-image: url(https://pixabay.com/get/ge5da49785b1ffab4360f0bf6ba17fe4e5bba4e11d16b65b560c938d08698e36b9ac94b022120226dbe48d834b79d26f2_1920.jpg);">
+        <div name="navbar" class="flex bg-white shadow-2xl border-box px-8 w-full flex-row justify-between h-20">
+            <div class="h-full flex flex-col justify-around">
+                <img class="h-full p-2" src="./logoex.jpeg" alt=""></div>
+            <div name="items" class="hidden md:flex h-full flex flex-row" style="font-family: Quicksand-Bold;">
+                <div class="h-full mx-4 font-bold flex flex-col justify-around">
+                    <a href="">HOME</a>
+                </div>
+                <div class="h-full mx-4  font-bold flex flex-col justify-around">
+                    <a href="#about_us">ABOUT US</a>
+                </div>
+                <div class="h-full mx-4  font-bold flex flex-col justify-around">
+                    <a href="#product_list">PRODUCTS</a>
+                </div>
+                <div class="h-full mx-4  font-bold flex flex-col justify-around">
+                    <a href="#contact">CONTACT US</a>
+                </div>
+            </div>
+            <div id="pane_toggle" class="md:hidden flex flex-col justify-around">
+                <img src="./menu_white.svg" alt="">
+            </div>
+        </div>
+        
+        <div class="flex flex-col border-box py-36 px-8 lg:px-16">
+            <h1 class="text-4xl md:text-6xl text-white titles" style="text-shadow: 5px 5px 8px rgb(35, 35, 35);">
+                Protect Your Family With The Next-Gen KendStar Active Copper RO
+            </h1><br><br>
+            <div class="flex flex-col md:flex-row" style="font-family: Quicksand-bold;">
+                <a href="" class="py-2 md:mr-2 px-4 bg-red-500 text-white">OUR PRODUCTS</a>
+                <a href="" class="py-2 md:ml-2 px-4 text-white" style="background-color: rgba(255, 255, 255, 0.2);">CONTACT US</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about_us" class="px-4 md:h-screen flex flex-col-reverse md:flex-row">
+        <div class="w-full md:w-1/2 h-full mb-4 md:mb-0 flex flex-col justify-around">
+            <div class="flex flex-row justify-around w-full">
+                <img class="md:w-4/5 rounded-3xl" src="./About.PNG" alt="">
+        
+            </div>
+        </div><br><br>
+        <div class="text-center border-box md:text-left w-full md:w-1/2 flex flex-col justify-around h-full">
+            <div class="border-box w-full border-box pt-8 md:pt-0 md:pr-8">
+                <h1 class="text-4xl md:text-6xl" style="font-family: Quicksand-regular;">About Us</h1>
+                <br><br>
+                <hr>
+                <br><br>
+                <h1 class="text-xl" style="font-family: Quicksand-regular;">We are KendStar, a Water Purifier Startup. Our goal is to distribute clean water to remote places in India, where the water is contaminated. We are one of the finest Manufactures of Water Purifier, who provides services at an affordable price, for both Industry-Standard usages and Personal Home Usage</h1>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="product_list" class="border-box px-4 md:px-16 py-8">
+        <h1 class="text-4xl text-center md:text-6xl" style="font-family: Quicksand-regular;">Product Lists</h1>
+        <h1 class="text-2xl text-center md:text-4xl" style="font-family: Quicksand-regular;">Domestic Products</h1>
+        <br><br><hr><br><br>
+        <div class="flex flex-col">
+            <!-- component -->
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./Genius.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Genius Water Purifier</h1>
+                    
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹18,500</span>
+                        <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Multiple Purification By RO+ UV+ UF+ TDS+ Mineral+ Activate Copper</li>
+                            <li>9 Litre Storage Tank with water indicator</li>
+                            <li>High Purification rate of 20L/h & low water waste</li>
+                            <li>TDS Controller retains essential natural minerals in water</li>
+                            <li>Stainless steel UV Chamber</li>
+                            <li>Automatic Operaions</li>
+                        </ul>
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./Pro Start.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Pro Star Water Purifier</h1>
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹17,500</span>    
+                    <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Multiple Purification By RO+ UV+ UF+ TDS+ Mineral+ Activate Copper</li>
+                            <li>16 Litre Storage Tank with water indicator</li>
+                            <li>High Purification rate of 20L/h & low water waste</li>
+                            <li>TDS Controller retains essential natural minerals in water</li>
+                            <li>Stainless steel UV Chamber</li>
+                            <li>Automatic Operaions</li>
+                        </ul>
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./Royal.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Royal Water Purifier</h1>
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹18,500</span>
+                           
+                    <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Multiple Purification By RO+ UV+ UF+ TDS+ Mineral+ Activate Copper</li>
+                            <li>12 Litre Storage Tank with water indicator</li>
+                            <li>High Purification rate of 20L/h & low water waste</li>
+                            <li>TDS Controller retains essential natural minerals in water</li>
+                            <li>Stainless steel UV Chamber</li>
+                            <li>Automatic Operaions</li>
+                        </ul>
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./Max.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Max Water Purifier</h1>
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹19,000</span>
+                           
+                    <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Multiple Purification By RO+ UV+ UF+ TDS+ Mineral+ Activate Copper</li>
+                            <li>8 Litre Storage Tank with water indicator</li>
+                            <li>High Purification rate of 20L/h & low water waste</li>
+                            <li>TDS Controller retains essential natural minerals in water</li>
+                            <li>Stainless steel UV Chamber</li>
+                            <li>Automatic Operaions</li>
+                        </ul>
+                    </p>
+                   
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./Prime.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Prime Water Purifier</h1>
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹18,000</span>
+                           
+                    <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Multiple Purification By RO+ UV+ UF+ TDS+ Mineral+ Activate Copper</li>
+                            <li>10 Litre Storage Tank with water indicator</li>
+                            <li>High Purification rate of 20L/h & low water waste</li>
+                            <li>TDS Controller retains essential natural minerals in water</li>
+                            <li>Stainless steel UV Chamber</li>
+                            <li>Automatic Operaions</li>
+                        </ul>
+                    </p>
+                   
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./Gold Star.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Gold Star Water Purifier</h1>
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹2,990</span>
+                           
+                    <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Sediment +Activated Carbon + Hollow Fiber UF</li>
+                            <li>20 Ltr. Storage Tank / 10 Ltr. Storage Tank</li>
+                        </ul>
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+            </section>
+        </div>
+        <br><br>
+        <h1 class="text-4xl text-center md:text-6xl" style="font-family: Quicksand-regular;">Commercial Products</h1>
+        <br><br><hr><br><br>
+        <div class="flex flex-col">
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./I0.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Commercial 1 Water Purifier</h1>
+                    
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹29,990</span>
+                        <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Multiple Purification By RO+ UV+ UF+ TDS+ Mineral+ Activate Copper</li>
+                            <li>High Purification rate of 25L/h & low water waste</li>
+                            <li>Automatic Operaions</li>
+                        </ul>
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./I1.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Commercial 2 Water Purifier</h1>
+                    
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹29,990</span>
+                        <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Multiple Purification By RO+ UV+ UF+ TDS+ Mineral+ Activate Copper</li>
+                            <li>High Purification rate of 50L/h & low water waste</li>
+                            <li>Automatic Operaions</li>
+                        </ul>
+                    </p>
+                
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="border mb-2 w-full rounded-xl border-gray-100 text-gray-700 body-font overflow-hidden bg-white">
+                <div class="container px-5 py-24 mx-auto">
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="./I2.PNG">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">KENDSTAR</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Commercial 3 Water Purifier</h1>
+                    
+                    <span class="title-font font-medium text-2xl text-gray-900">MRP ₹29,990</span>
+                        <br><br><hr><br>
+                    <p class="leading-relaxed">
+
+                        <ul class="border-box px-2" style="list-style: disc; font-family: Quicksand-regular;">
+                            <li>Multiple Purification By RO+ UV+ UF+ TDS+ Mineral+ Activate Copper</li>
+                            <li>High Purification rate of 100L/h & low water waste</li>
+                            <li>Automatic Operaions</li>
+                        </ul>
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+
+    <section>
+        <h1 class="text-4xl text-center md:text-6xl" style="font-family: Quicksand-regular;">Commercial Catelog</h1>
+<br><br><hr><br><br>
+
+<img class="w-full" src="./catalog.jpeg" alt="">
+    </section><br><hr><br>
+
+    <section>
+        <h1 class="text-4xl text-center md:text-6xl" style="font-family: Quicksand-regular;">Premium Kendstar Chemney</h1>
+    <br><br><hr><br><br>
+    <img src="./chemney_start.jpeg" alt="" class="w-full">
+    <img src="./0.jpeg" alt="" class="w-full">
+    <img src="./1.jpeg" alt="" class="w-full">
+    <img src="./2.jpeg" alt="" class="w-full">
+    <img src="./3.jpeg" alt="" class="w-full">
+    <img src="./4.jpeg" alt="" class="w-full">
+    <img src="./5.jpeg" alt="" class="w-full">
+    <img src="./6.jpeg" alt="" class="w-full">
+    <img src="./7.jpeg" alt="" class="w-full">
+</section>
+    <img id="contact" class="w-full" src="./WhatsApp Image 2021-06-06 at 16.47.59.jpeg" alt="">
+    <div class="w-full flex flex-col">
+        <a class="w-full text-center p-2 border-box bg-blue-500 text-white font-bold" href="mailto:email@example.com">Email: kendstar1995@gmail.com</a>
+        <a class="w-full text-center p-2 border-box bg-blue-500 text-white font-bold" href="tel:6296855598">Phone: +91-6296855598</a>
+    </div>
+    <section name="footer" class="p-4 flex flex-col bg-gray-c35">
+        <img class="md:w-1/3" src="./Logos.PNG" alt="">
+        
+        <br><br>
+        <h1 class="text-white text-2xl" style="font-family: Quicksand-regular;">Designed By Mayukh Chakraborty</h1>
+        <br><br>
+        <hr><br>
+        <h1 class="text-white mt-8 text-xl">© 2021 KendStar</h1>
+    </section>
+
+    <script src="sidepane.js">
+        
+    </script>
+</body>
+</html>
